@@ -1,0 +1,258 @@
+/* Gaya dasar untuk seluruh halaman */
+body {
+    background-image: url(aset/230115-NewJeans-Hanni-OMG-at-Inkigayo-documents-2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Galeri gambar */
+.image-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gaya judul utama */
+h1 {
+    font-family: 'Viner Hand ITC', cursive;
+    text-align: center;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+/* Gaya judul untuk bagian video, audio, dan gambar */
+h2#video, h2#audio, h2#gambar {
+    font-family: 'Poppins', sans-serif; 
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #9525b5;
+    background: #21a6df;
+    box-shadow: 1px 1px 2px #1c181c;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+h2#video:hover, h2#audio:hover, h2#gambar:hover {
+    transform: scale(1.05);
+}
+
+/* Warna teks umum untuk judul dan teks */
+h2 {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+/* Atur daftar video dan audio */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+li {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+}
+
+/* Pengaturan galeri gambar */
+.image-gallery {
+    display: table;
+    width: 100%;
+}
+
+.image-gallery div {
+    display: table-row;
+}
+
+.image-gallery img {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-gallery h4 {
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Gaya untuk kontainer musik */
+.music-container {
+    background-color: #f0f0f000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin: 10px 0;
+}
+
+.music-container:hover {
+    transform: translateY(-10px);
+}
+
+/* Sembunyikan audio player */
+#music10, #music11, #music12, #music13, #music14 {
+    display: none;
+}
+
+/* Gaya untuk tombol home */
+.home-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-button:hover {
+    transform: scale(1.1);
+}
+
+/* Gaya untuk tombol utama */
+.btn-primary {
+    background-color: #ff69b4; /* Warna latar belakang pink */
+    border-color: #ff69b4; /* Warna border pink */
+    color: white; /* Warna teks putih */
+    padding: 15px 30px;
+    font-size: 24px; /* Ukuran teks yang lebih besar */
+    text-align: center;
+    display: inline-block;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px; /* Menambahkan border radius */
+}
+
+.btn-primary:hover {
+    background-color: #ff1493; /* Warna pink lebih gelap saat hover */
+    border-color: #ff1493;
+    transform: scale(1.05); /* Sedikit perbesaran saat di-hover */
+}
+
+.form-check {
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+/* Gaya form dan input */
+.form-control{
+    margin: 10px 0;
+    color: rgb(46, 34, 45);
+}
+
+/* Pusatkan teks dalam elemen dengan kelas .text-center */
+.text-center {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Formulir dengan batas lebar untuk tata letak yang lebih baik */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+/* Judul halaman survey */
+h1.text-center {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Gaya responsif */
+@media screen and (max-width: 768px) {
+    li {
+        flex-basis: 45%;
+    }
+    
+    .text-center .btn-primary {
+        font-size: 20px;
+    }
+
+    h1.text-center {
+        font-size: 28px;
+    }
+}
+
+/* Footer styling */
+.footer {
+    background-color: #ff69b4;
+    padding: 20px 0;
+    border-top: 1px solid #ff69b4;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer .text-muted {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.footer .footer-link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer .footer-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .container {
+        text-align: center;
+    }
+
+    .footer .footer-link {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Gaya untuk link survey di bagian bawah halaman */
+.survey-link {
+    text-align: center;
+    margin: 40px 0; /* Memberikan jarak yang cukup dari elemen lain */
+}
+
+.survey-link a {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.survey-link a:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}

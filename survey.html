@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewJeans Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center my-4">
+            <a href="index.html">
+                <img src="aset/230115-NewJeans-Hanni-OMG-at-Inkigayo-documents-2.jpeg" alt="Home" class="home-button">
+            <h1>NEWJEANS SURVEY</h1>
+            </a>
+        </div>
+        <form onsubmit="submitData(); return false;">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">NewJeans Username</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="role" class="form-label">Favorite Member</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="role1" value="Hanni" required>
+                    <label class="form-check-label" for="role1">Hanni</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="role2" value="Minji" required>
+                    <label class="form-check-label" for="role2">Minji</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="role3" value="Haerin" required>
+                    <label class="form-check-label" for="role3">Haerin</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="role4" value="Hyein" required>
+                    <label class="form-check-label" for="role4">Hyein</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="role" id="role5" value="Danielle" required>
+                    <label class="form-check-label" for="role5">Danielle</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="mb-3">
+                <label for="playTime" class="form-label">Hours Listened Per Week</label>
+                <input type="number" class="form-control" id="playTime" required>
+            </div>
+            <div class="mb-3">
+                <label for="favoriteAgent" class="form-label">Favorite Album</label>
+                <input type="text" class="form-control" id="favoriteAgent" required>
+            </div>
+            <div class="mb-3">
+                <label for="gameMode" class="form-label">Favorite Song</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gameMode" id="gameMode1" value="DITTO" required>
+                    <label class="form-check-label" for="gameMode1">DITTO</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gameMode" id="gameMode2" value="OMG" required>
+                    <label class="form-check-label" for="gameMode2">OMG</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gameMode" id="gameMode3" value="GODS" required>
+                    <label class="form-check-label" for="gameMode3">GODS</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 NewJeans Fan Survey. All rights reserved.</span>
+            <br>
+            <a href="https://newjeans.kr/" target="_blank" rel="noopener" class="footer-link">Official Website</a> | 
+            <a href="https://www.instagram.com/newjeans_official/" target="_blank" rel="noopener" class="footer-link">Social Media</a> | 
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
